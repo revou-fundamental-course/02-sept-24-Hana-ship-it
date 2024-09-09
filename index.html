@@ -7,6 +7,48 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    
+    <header class="main-header">
+        <h1>Welcome to Katik</h1>
+        <p>Hai Kawan! Selamat datang di Katik!</p>
+    </header>
+
+    <main>
+        <section class="selection-content">
+            <button href="#" type="button" class="selection-btn pink-color">Segitiga</button>
+            <button href="#" type="button" class="selection-btn lightskyblue-color">Jajar Genjang</button>
+        </section>
+
+        <section>
+            <header>
+                <h1 class="luas-segitiga-header">Luas Segitiga</h1>
+            </header>
+
+            <article class="luas-segitiga-content">
+                <div class="luas-segitiga-img"></div>
+                <p>Rumus Luas Segitiga:</p>
+            </article>
+            
+            <hr />
+
+            <form>
+                <header>
+                    <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+                </header>
+
+                <div class="input-wrapper">
+                    <label for="panjang-alas">Panjang Alas:</label>
+                    <input id="panjang-alas" type="number"/>
+                </div>
+                <div class="input-wrapper">
+                    <label for="tinggi">Tinggi:</label>
+                    <input id="tinggi" type="number"/>
+                </div>
+
+                <p id="result">Hasil Perhitungan:</p>
+
+                <button>hitung</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

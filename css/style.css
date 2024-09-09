@@ -1,1 +1,70 @@
 /* ini CSS */
+
+.main-header {
+    text-align: center;
+}
+
+.selection-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.selection-btn {
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+}
+
+.lightskyblue-color {
+    background-color: white;
+}
+
+.pink-color {
+    background-color: pink;
+}
+
+.luas-segitiga-header {
+    border: 1px solid;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+    background: aquamarine;
+    text-align: center;
+}
+
+.luas-segitiga-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.luas-segitiga-img {
+    height: 300px;
+    width: 300px;
+    background-image: url(https://i0.wp.com/asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
+.luas-segitiga-form-header {
+    text-align: center;
+}
+
+.input-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-wrapper>input {
+    width: 75%;
+}
+
+.input[type=number] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
