@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator Matematik</title>
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
     <header class="main-header">
         <h1>Welcome to Katik</h1>
-        <p>Hai Kawan! Selamat datang di Katik!</p>
+        <p>Hai Kawan! Selamat datang diKatik!</p>
     </header>
 
     <main>
@@ -20,7 +20,7 @@
 
         <section id="triangle-section" class="calc-section" style="display: none;">
             <header>
-                <h1 class="calc-header">Luas Segitiga</h1>
+                <h1 class="calc-header">Luas dan Keliling Segitiga</h1>
             </header>
 
             <article class="calc-content">
@@ -28,13 +28,14 @@
                     <img src="https://i2.wp.com/cilacapklik.com/wp-content/uploads/2022/07/Rumus-Segitiga-Sama-Kaki.png" alt="segitiga">
                 </div>
                 <p>Rumus Luas Segitiga: <b>1/2 x alas x tinggi</b></p>
+                <p>Rumus Keliling Segitiga: <b>jumlah seluruh sisinya</b></p>
             </article>
             
             <hr />
 
             <form id="triangle-form">
                 <header>
-                    <h1 class="form-header">Hitung Luas Segitiga</h1>
+                    <h1 class="form-header">Hitung Luas dan Keliling Segitiga</h1>
                 </header>
 
                 <div class="input-wrapper">
@@ -45,6 +46,18 @@
                     <label for="height">Tinggi:</label>
                     <input id="height" type="number" required/>
                 </div>
+                <div class="input-wrapper">
+                    <label for="side1">Sisi 1:</label>
+                    <input id="side1" type="number" required />
+                </div>
+                <div class="input-wrapper">
+                    <label for="side2">Sisi 2:</label>
+                    <input id="side2" type="number" required />
+                </div>
+                <div class="input-wrapper">
+                    <label for="side3">Sisi 3:</label>
+                    <input id="side3" type="number" required />
+                </div>
                 <button type="button" onclick="calculateTriangle()">Hitung</button>
                 <p id="triangle-result">Hasil Perhitungan:</p>
             </form>
@@ -52,18 +65,19 @@
 
         <section id="parallelogram-section" class="calc-section" style="display: none;">
             <header>
-                <h1 class="calc-header">Luas Jajar Genjang</h1>
+                <h1 class="calc-header">Luas dan Keliling Jajar Genjang</h1>
             </header>
             <article class="calc-content">
                 <div class="calc-img">
                     <img src="https://cilacapklik.com/wp-content/uploads/2021/08/Rumus-Luas-Jajar-Genjang.jpg" alt="jajar-genjang">
                 </div>
                 <p>Rumus Luas jajar Genjang: <b>alas x tinggi</b></p>
+                <p>Rumus Keliling Jajar Gebjang: <b>2 x (alas + sisi miring)</b></p>
             </article>
             <hr />
             <form id="parallelogram-form">
                 <header>
-                    <h1 class="form-header">Hitung Luas Jajar Genjang</h1>
+                    <h1 class="form-header">Hitung Luas dan Keliling Jajar Genjang</h1>
                 </header>
                 <div class="input-wrapper">
                     <label for="base-parallelogram">Panjang Alas</label>
@@ -73,11 +87,15 @@
                     <label for="height-parallelogram">Tinggi:</label>
                     <input id="height-parallelogram" type="number" required />
                 </div>
+                <div class="input-wrapper">
+                    <label for="side-parallelogram">Sisi Miring:</label>
+                    <input id="side-parallelogram" type="number" required />
+                </div>
                 <button type="button" onclick="calculateParallelogram()">Hitung</button>
                 <p id="parallelogram-result">Hasil Perhitungan</p>
             </form>
         </section>
     </main>
-    <script src="js\script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
