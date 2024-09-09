@@ -1,70 +1,92 @@
 /* ini CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-.main-header {
+header.main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
+}
+
+header.main-header p {
+    margin: 0;
 }
 
 .selection-content {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .selection-btn {
-    height: 36px;
-    border: none;
-    border-radius: 8px;
-}
-
-.lightskyblue-color {
-    background-color: white;
+   padding: 10px 20px;
+   border: none;
+   color: #fff;
+   font-size: 16px;
+   cursor: pointer;
+   margin: 5px;
+   border-radius: 4px;
 }
 
 .pink-color {
-    background-color: pink;
+    background-color: #e91e63;
 }
 
-.luas-segitiga-header {
-    border: 1px solid;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0px;
-    background: aquamarine;
+
+.lightskyblue-color {
+    background-color: #87cefa;
+}
+
+
+.calc-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0,1);
+}
+
+.calc-header {
     text-align: center;
 }
 
-.luas-segitiga-content {
-    display: flex;
-    flex-direction: column;
+.calc-content {
+    margin-bottom: 20px;
 }
 
-.luas-segitiga-img {
-    height: 300px;
-    width: 300px;
-    background-image: url(https://i0.wp.com/asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
-    background-size: cover;
-    background-position: center;
-    align-self: center;
-}
-
-.luas-segitiga-form-header {
-    text-align: center;
-}
-
-.input-wrapper {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.input-wrapper>input {
-    width: 75%;
+.calc-img img {
+    max-width: 100%;
+    height: auto;
 }
 
 .input[type=number] {
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #CCC;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.input[type=number] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#triangle-result, #parallelogram-result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
 }
